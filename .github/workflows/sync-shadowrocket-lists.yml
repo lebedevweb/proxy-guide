@@ -1,0 +1,39 @@
+name: Sync ShadowRocket Lists
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "rules/ClashVerge/*.yaml"
+      - "scripts/sync_shadowrocket_lists.sh"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate ShadowRocket lists
+        run: |
+          chmod +x scripts/sync_shadowrocket_lists.sh
+          scripts/sync_shadowrocket_lists.sh
+
+      - name: Commit updated lists
+        run: |
+          if [[ -z "$(git status --porcelain rules/ShadowRocket)" ]]; then
+            echo "No list changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rules/ShadowRocket
+          git commit -m "chore: sync ShadowRocket lists from ClashVerge rules"
+          git push

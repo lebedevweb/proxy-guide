@@ -1,0 +1,10 @@
+.idea/
+.DS_Store
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# Optional local overrides with secrets
+settings/*.local.yaml
+settings/*.local.conf

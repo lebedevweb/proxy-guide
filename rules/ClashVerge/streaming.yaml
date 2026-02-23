@@ -1,0 +1,83 @@
+payload:
+  # ================= Netflix =================
+  - DOMAIN-SUFFIX,netflix.com
+  - DOMAIN-SUFFIX,netflix.net
+  - DOMAIN-SUFFIX,nflxext.com
+  - DOMAIN-SUFFIX,nflximg.net
+  - DOMAIN-SUFFIX,nflxvideo.net
+  - DOMAIN-SUFFIX,nflxso.net
+
+  # ================= Disney+ / Hotstar =================
+  - DOMAIN-SUFFIX,disneyplus.com
+  - DOMAIN-SUFFIX,disney-plus.net
+  - DOMAIN-SUFFIX,disneystreaming.com
+  - DOMAIN-SUFFIX,bamgrid.com
+  - DOMAIN-SUFFIX,dssott.com
+  - DOMAIN-SUFFIX,hotstar.com
+  - DOMAIN-SUFFIX,hotstar-cdn.net
+  - DOMAIN-SUFFIX,hotstarext.com
+  - DOMAIN-SUFFIX,hotstar-labs.com
+
+  # ================= Max (HBO Max) =================
+  - DOMAIN-SUFFIX,max.com
+  - DOMAIN-SUFFIX,discomax.com
+  - DOMAIN-SUFFIX,hbo.com
+  - DOMAIN-SUFFIX,hbomax.com
+  - DOMAIN-SUFFIX,warnermediacdn.com
+  - DOMAIN-SUFFIX,ngtv.io
+  - DOMAIN-SUFFIX,pypestream.com
+  - DOMAIN-SUFFIX,cdn.turner.com
+
+  # ================= Amazon Prime Video =================
+  - DOMAIN-SUFFIX,primevideo.com
+  - DOMAIN-SUFFIX,amazonvideo.com
+  - DOMAIN-SUFFIX,aiv-cdn.net
+
+  # ================= Apple TV+ =================
+  - DOMAIN-SUFFIX,tv.apple.com
+
+  # ================= Hulu =================
+  - DOMAIN-SUFFIX,hulu.com
+  - DOMAIN-SUFFIX,huluim.com
+
+  # ================= Paramount+ =================
+  - DOMAIN-SUFFIX,paramountplus.com
+  - DOMAIN-SUFFIX,cbs.com
+  - DOMAIN-SUFFIX,cbsi.com
+  - DOMAIN-SUFFIX,cbsivideo.com
+
+  # ================= Peacock =================
+  - DOMAIN-SUFFIX,peacocktv.com
+  - DOMAIN-SUFFIX,nbcuni.com
+
+  # ================= Discovery+ =================
+  - DOMAIN-SUFFIX,discoveryplus.com
+  - DOMAIN-SUFFIX,discovery.com
+
+  # ================= Crunchyroll =================
+  - DOMAIN-SUFFIX,crunchyroll.com
+  - DOMAIN-SUFFIX,crunchyrollsvc.com
+
+  # ================= DAZN =================
+  - DOMAIN-SUFFIX,dazn.com
+  - DOMAIN-SUFFIX,dazn-api.com
+
+  # ================= BBC iPlayer (UK) =================
+  - DOMAIN-SUFFIX,bbc.co.uk
+  - DOMAIN-SUFFIX,bbc.com
+  - DOMAIN-SUFFIX,bbci.co.uk
+  - DOMAIN-SUFFIX,iplayer.io
+
+  # ================= ITVX / Channel 4 (UK) =================
+  - DOMAIN-SUFFIX,itv.com
+  - DOMAIN-SUFFIX,itvstatic.com
+  - DOMAIN-SUFFIX,channel4.com
+
+  # ================= Youtube =================
+  - DOMAIN-SUFFIX,youtube.com
+  - DOMAIN-SUFFIX,youtu.be
+  - DOMAIN-SUFFIX,googlevideo.com
+  - DOMAIN-SUFFIX,ytimg.com
+  - DOMAIN-SUFFIX,gvt2.com
+  - DOMAIN-SUFFIX,gstatic.com
+  - DOMAIN-SUFFIX,googleusercontent.com

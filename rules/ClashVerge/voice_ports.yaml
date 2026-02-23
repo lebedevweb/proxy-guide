@@ -1,0 +1,18 @@
+payload:
+  # WhatsApp / Telegram / FaceTime voice
+  - DST-PORT,3478
+  - DST-PORT,3480
+  - DST-PORT,3484
+
+  # WhatsApp video
+  - DST-PORT,5222
+
+  # Telegram voice/video (RTP / P2P)
+  - DST-PORT,596-599
+  # - DST-PORT,50000-59999
+
+  # Telegram signaling calls
+  - DST-PORT,1400
+
+  # Google Meet
+  - DST-PORT,19302-19309
