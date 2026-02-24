@@ -5,6 +5,9 @@ allow-lan: false
 mode: rule
 log-level: info
 
+profile:
+  store-selected: true
+
 dns:
   enable: true
   ipv6: false
@@ -13,17 +16,31 @@ dns:
     - https://cloudflare-dns.com/dns-query
     - https://dns.quad9.net/dns-query
 
+tun:
+  enable: true
+  stack: mixed
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - any:53
+
 proxies:
   - name: "MY-PROXY"
     type: socks5
-    server:
-    port:
-    username:
-    password:
+    server: 127.0.0.1
+    port: 1080
+    username: ""
+    password: ""
     udp: true
 
 proxy-groups:
   - name: Proxy
+    type: select
+    proxies:
+      - "MY-PROXY"
+      - DIRECT
+
+  - name: GLOBAL
     type: select
     proxies:
       - "MY-PROXY"
@@ -39,42 +56,42 @@ rule-providers:
 
   ai:
     type: http
-    behavior: domain
+    behavior: classical
     url: https://raw.githubusercontent.com/lebedevweb/proxy-guide/main/rules/ClashVerge/ai.yaml
     path: ./ruleset/ai.yaml
     interval: 86400
 
   streaming:
     type: http
-    behavior: domain
+    behavior: classical
     url: https://raw.githubusercontent.com/lebedevweb/proxy-guide/main/rules/ClashVerge/streaming.yaml
     path: ./ruleset/streaming.yaml
     interval: 86400
 
   work:
     type: http
-    behavior: domain
+    behavior: classical
     url: https://raw.githubusercontent.com/lebedevweb/proxy-guide/main/rules/ClashVerge/work.yaml
     path: ./ruleset/work.yaml
     interval: 86400
 
   social:
     type: http
-    behavior: domain
+    behavior: classical
     url: https://raw.githubusercontent.com/lebedevweb/proxy-guide/main/rules/ClashVerge/social.yaml
     path: ./ruleset/social.yaml
     interval: 86400
 
   torrents:
     type: http
-    behavior: domain
+    behavior: classical
     url: https://raw.githubusercontent.com/lebedevweb/proxy-guide/main/rules/ClashVerge/torrents.yaml
     path: ./ruleset/torrents.yaml
     interval: 86400
 
   storage:
     type: http
-    behavior: domain
+    behavior: classical
     url: https://raw.githubusercontent.com/lebedevweb/proxy-guide/main/rules/ClashVerge/storage.yaml
     path: ./ruleset/storage.yaml
     interval: 86400

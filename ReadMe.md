@@ -17,7 +17,7 @@
 ## Приложения
 
 1. iOS/macOS: [Shadowrocket](https://apps.apple.com/ru/app/shadowrocket/id932747118)
-2. macOS/Linux/Windows: [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev/releases), [Shadowrocket](https://apps.apple.com/ru/app/shadowrocket/id932747118)
+2. macOS/Linux/Windows: [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev/releases), [Shadowrocket](https://apps.apple.com/ru/app/shadowrocket/id932747118) (MacOS)
 3. Android: [ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid/releases/)
 
 ## Готовые ссылки на настройки (RAW)
@@ -103,6 +103,8 @@ proxies:
     password: password
     udp: true
 ```
+
+
 
 ---
 
