@@ -23,6 +23,11 @@ payload:
   # ================= imo =================
   - DOMAIN-SUFFIX,imo.im
   - DOMAIN-SUFFIX,imoapp.com
+  - IP-CIDR,5.150.156.0/22
+  - IP-CIDR,38.90.96.0/24
+  - IP-CIDR,69.57.173.0/24
+  - IP-CIDR,83.229.88.0/22
+  - IP-CIDR,83.229.96.0/22
 
   # ================= TikTok =================
   - DOMAIN-SUFFIX,tiktok.com
