@@ -54,6 +54,13 @@ proxy-groups:
       - DIRECT
 
 rule-providers:
+  reject:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/lebedevweb/proxy-guide/main/rules/ClashVerge/reject.yaml
+    path: ./ruleset/reject.yaml
+    interval: 86400
+
   voice_ports:
     type: http
     behavior: classical
@@ -104,6 +111,7 @@ rule-providers:
     interval: 86400
 
 rules:
+  - RULE-SET,reject,REJECT
   - RULE-SET,voice_ports,Proxy
   - RULE-SET,ai,Proxy
   - RULE-SET,streaming,Proxy

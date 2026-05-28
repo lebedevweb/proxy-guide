@@ -7,7 +7,7 @@ DST_DIR="${ROOT_DIR}/rules/ShadowRocket"
 
 mkdir -p "${DST_DIR}"
 
-RULE_FILES=(voice_ports ai streaming work social torrents storage)
+RULE_FILES=(reject voice_ports ai streaming work social torrents storage)
 
 for name in "${RULE_FILES[@]}"; do
   src="${SRC_DIR}/${name}.yaml"

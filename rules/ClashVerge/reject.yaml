@@ -1,0 +1,12 @@
+payload:
+  # ================= Adobe =================
+  - DOMAIN-SUFFIX,adobe.com
+  - DOMAIN-SUFFIX,adobe.io
+  - DOMAIN-SUFFIX,adobelogin.com
+  - DOMAIN-SUFFIX,adobecc.com
+  - DOMAIN-SUFFIX,adobeccstatic.com
+  - DOMAIN-SUFFIX,adobesc.com
+  - DOMAIN-SUFFIX,adobess.com
+  - DOMAIN-SUFFIX,adobeactivate.com
+  - DOMAIN,activate.adobe.com
+  - DOMAIN,ereg.adobe.com

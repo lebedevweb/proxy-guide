@@ -20,6 +20,10 @@ payload:
   - DOMAIN-SUFFIX,whatsapp.com
   - DOMAIN-SUFFIX,whatsapp.net
 
+  # ================= imo =================
+  - DOMAIN-SUFFIX,imo.im
+  - DOMAIN-SUFFIX,imoapp.com
+
   # ================= TikTok =================
   - DOMAIN-SUFFIX,tiktok.com
   - DOMAIN-SUFFIX,tiktokv.com
