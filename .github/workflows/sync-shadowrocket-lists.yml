@@ -6,7 +6,9 @@ on:
       - main
     paths:
       - "rules/ClashVerge/*.yaml"
+      - "rules/ShadowRocket/*.list"
       - "scripts/sync_shadowrocket_lists.sh"
+      - ".github/workflows/sync-shadowrocket-lists.yml"
   workflow_dispatch:
 
 permissions:

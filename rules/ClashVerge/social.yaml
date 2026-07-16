@@ -42,3 +42,7 @@ payload:
   - DOMAIN-SUFFIX,x.com
   - DOMAIN-SUFFIX,twitter.com
   - DOMAIN-SUFFIX,twimg.com
+
+  # ================= Other =================
+  - IP-CIDR,154.81.194.61
+  - DOMAIN-KEYWORD,mtproto

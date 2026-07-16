@@ -83,3 +83,11 @@ payload:
   - DOMAIN-SUFFIX,googleusercontent.com
   - DOMAIN-SUFFIX,ggpht.com
   - DOMAIN-SUFFIX,googleapis.com
+
+  # ================= Pron =================
+  - DOMAIN-KEYWORD,pornhub
+  - DOMAIN-KEYWORD,phncdn
+  - DOMAIN-KEYWORD,etahub
+  - DOMAIN-KEYWORD,cdn-d50
+  - DOMAIN-SUFFIX,pornworks.app
+  - DOMAIN-SUFFIX,corrupted-mods.academy
