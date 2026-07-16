@@ -7,16 +7,12 @@ DST_DIR="${ROOT_DIR}/rules/ShadowRocket"
 
 mkdir -p "${DST_DIR}"
 
-RULE_FILES=(reject voice_ports ai streaming work social torrents storage)
+shopt -s nullglob
+RULE_FILES=("${SRC_DIR}"/*.yaml)
 
-for name in "${RULE_FILES[@]}"; do
-  src="${SRC_DIR}/${name}.yaml"
+for src in "${RULE_FILES[@]}"; do
+  name="$(basename "${src}" .yaml)"
   dst="${DST_DIR}/${name}.list"
-
-  if [[ ! -f "${src}" ]]; then
-    echo "Missing source file: ${src}" >&2
-    exit 1
-  fi
 
   sed -n '/^payload:/,$p' "${src}" \
     | sed '1d' \
