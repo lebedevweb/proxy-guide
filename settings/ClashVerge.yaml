@@ -126,6 +126,13 @@ rule-providers:
     path: ./ruleset/storage.yaml
     interval: 86400
 
+  dev:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/lebedevweb/proxy-guide/main/rules/ClashVerge/dev.yaml
+    path: ./ruleset/dev.yaml
+    interval: 86400
+
 rules:
   - RULE-SET,reject,REJECT
   - RULE-SET,voice_ports,Proxy
