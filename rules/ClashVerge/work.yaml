@@ -23,6 +23,7 @@ payload:
   # Core API
   - DOMAIN-SUFFIX,stripe.com
   - DOMAIN-SUFFIX,stripe.network
+  - DOMAIN-KEYWORD,carddy
 
   - # JS / Checkout / Elements
   - DOMAIN-SUFFIX,stripejs.com

@@ -134,6 +134,7 @@ rule-providers:
     interval: 86400
 
 rules:
+  - DOMAIN,cdn1.lwbeget.ru,DIRECT
   - RULE-SET,reject,REJECT
   - RULE-SET,voice_ports,Proxy
   - RULE-SET,ai,Proxy
@@ -142,4 +143,5 @@ rules:
   - RULE-SET,social,Proxy
   - RULE-SET,torrents,Proxy
   - RULE-SET,storage,Proxy
+  - RULE-SET,dev,Proxy
   - MATCH,DIRECT
